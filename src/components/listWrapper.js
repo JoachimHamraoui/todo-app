@@ -26,6 +26,7 @@ const ListWrapper = () => {
           <Item key={index} date={date} id={index} title={item} />
         ))}
 
+        <div className="flex gap-1">
         <input
           type="text"
           placeholder="Add a new item"
@@ -34,6 +35,13 @@ const ListWrapper = () => {
           onChange={(e) => setInputValue(e.target.value)}
           onKeyPress={handleKeyPress}
         ></input>
+        <button
+          className="bg-slate-600 text-white px-4 py-2 rounded-md font-main"
+          onClick={addItem}
+        >
+          Add
+        </button>
+        </div>
       </div>
     </div>
   );
