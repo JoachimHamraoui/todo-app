@@ -36,7 +36,7 @@ const ListWrapper = () => {
           onKeyPress={handleKeyPress}
         ></input>
         <button
-          className="bg-slate-600 text-white px-4 py-2 rounded-md font-main"
+          className="bg-green-600 text-white px-4 py-2 rounded-md font-main"
           onClick={addItem}
         >
           Add
